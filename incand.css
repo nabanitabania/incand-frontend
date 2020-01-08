@@ -8,23 +8,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background: #c21500; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #c21500, #ffc500); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #c21500, #ffc500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
-h1 {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: #ee4540;
-    background: #000;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    font-weight: 800;
-    padding-top: 100px;
-    min-height: 80px;
-  }
+
 
 
 /************************
@@ -277,7 +269,7 @@ responsive
   }
 
   #chief {
-    width: 100%
+    width: 100%;
     height: 0px;
   }
 
@@ -287,7 +279,7 @@ responsive
   }
 
   #convenor {
-    width: 100%
+    width: 100%;
     height: 700px;
   }
 
@@ -299,4 +291,80 @@ responsive
   }
 
 
+}
+
+
+.fire1 {
+  margin-left: 26%;
+  margin-top: 100px;
+}
+
+.fire2 {
+  margin-left: -55px;
+  margin-top: 100px;
+  animation-delay: 0.5s;
+}
+
+.fire3 {
+  margin-left: 38.5%;
+  margin-top: 100px;
+}
+
+.fire4 {
+  margin-left: -55px;
+  margin-top: 100px;
+  animation-delay: 0.5s;
+}
+
+.mashal1 {
+  margin-top: 5px;
+  margin-left: 26.5%;
+  
+}
+
+.mashal2 {
+  margin-top: 5px;
+  margin-left: 38%;
+  
+}
+
+
+
+.top {
+ 
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(200,0,0,0.5)), url("images/palace.png");
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+} 
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #000;
+  font-family: 'Yeseva One', cursive;
+  margin-top: -150px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  font-weight: 800;
+  text-shadow: 4px 3px #fff;
+  
+}
+
+
+#fire {
+  animation-name: flameWobble;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes flameWobble {
+  50% {
+    transform: scale(1,1.2) translate(0, -20px) rotate(-1deg);
+  }
 }
